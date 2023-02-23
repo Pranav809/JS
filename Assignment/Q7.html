@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 7</title>
+</head>
+<body>
+    <script>
+        let str = "the quick brown fox jumps over the lazy dog.";
+        let map = new Map();
+        let arr = str.split(" ");
+        str.split(" ").forEach(element => {
+            map[element] = map[element]?map[element]+1:1;
+        })
+        // console.log(arr);
+        let max = 1;
+        let maxWord = arr[0];
+        for(const key of map){
+            if(map[key] > max){
+                max = map[key];
+                maxWord = key;
+            }
+        }
+        console.log(maxWord);
+    </script>
+</body>
+</html>

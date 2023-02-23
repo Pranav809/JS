@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//     let stumap = new Map();
+// let studentNames  = ["akhil","akhil", "pranav","ayushi","ritesh","ankit","devesh","ram","nitin","akhil", "pranav","ayushi","ritesh","ankit","devesh","ram","nitin"]
+// for(e in studentNames){
+//     if(stumap.has(studentNames[e])){
+//         let count = stumap.get(studentNames[e])
+//         stumap.set(studentNames[e],count+1)
+//     }else{
+//         stumap.set(studentNames[e],1)
+//     }
+// }
+// for(let [key,value] of stumap.entries()){
+//     console.log(key + " ===== > " + value)
+// }
+
+// for (let values of stumap.values()) {
+//   console.log(values);
+// }
+
+function makeAdder(x) {
+  return function(y) {
+    return x + y;
+  };
+}
+let add5 = makeAdder(5);
+console.log(makeAdder(5));
+let result = add5(3); // result = 8
+console.log(result);
+    </script>
+</body>
+</html>

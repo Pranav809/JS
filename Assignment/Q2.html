@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q2</title>
+</head>
+<body>
+    <script>
+        let arr = [10,20,30,40];
+        // let str = arr.toString();
+        // console.log(str);
+        // let str2 = arr.join("_");  //concatenating elments into string with specified seperator
+        // console.log(str2);
+
+        //We can pass String constructor as a function 
+        //in the map function, this will turn each number into a string.
+        let str = arr.map(String);
+        console.log(str);
+
+        let str2 = arr.toString().split(',');
+        console.log(str2);
+
+        let str3 = arr.join().split(',');
+        console.log(str3);
+    </script>
+</body>
+</html>
